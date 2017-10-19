@@ -1,0 +1,173 @@
+/*  SASS SHORTCUTS
+***********************************************************/
+$Raleway: "Raleway", sans-serif;
+$Lato: "Lato", sans-serif;
+$Cormorant: "Cormorant", sans-serif;
+$Trirong: "Trirong", sans-serif;
+
+@mixin transition($second) {
+    -webkit-transition: $second; 
+    -moz-transition: $second; 
+    -ms-transition: $second; 
+    -o-transition: $second; 
+    transition: $second; 
+}
+// .targetElement { @include transition(0.1s); }
+
+
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+@mixin rotate ($deg) { 
+	@include transform(rotate(#{$deg}deg));
+}
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+
+@mixin background-size($cover) {
+    -webkit-background-size: $cover; 
+    -o-background-size: $cover; 
+    background-size: $cover; 
+}
+// .targetElement { @include background-size(cover); }
+
+
+/*  HR  */
+.silver_HR {
+    width: 100%;
+    height: 1px;
+    background: silver;
+    border: 0;
+    float: left;
+    margin: 25px 0;
+}
+/*  @extend .silver_HR;  */
+.red_HR {
+    width: 15px;
+    height: 3px;
+    background: #f73304;
+    border: 0;
+    float: left;
+    margin: 25px 0;
+    @include transition(0.3s);
+    -webkit-transition-timing-function: cubic-bezier(.77,.17,.51,.78);
+       -moz-transition-timing-function: cubic-bezier(.77,.17,.51,.78);
+        -ms-transition-timing-function: cubic-bezier(.77,.17,.51,.78);
+         -o-transition-timing-function: cubic-bezier(.77,.17,.51,.78);
+            transition-timing-function: cubic-bezier(.77,.17,.51,.78);
+}
+/*  @extend .red_HR;  */
+
+
+
+
+
+
+
+
+
+
+
+
+    //     <div class="imgContent">
+    //         <div class='track2'>
+    //             <div class="progressBar_rightPage"></div>
+    //         </div>
+    //         <div class="page4"></div>
+    //         <article class="article4">
+    //             <div class="content content4">
+    //                 <div class="intro">
+    //                     <h1>4. Our Favorite Sites</h1>
+    //                     <hr class="red">
+    //                     <h6><span>BRANDING</span><br>Creative Direction & Design</h6>
+    //                     <hr class="red">
+    //                     <p>
+    // Donec vitae dapibus ante, eget congue magna. Nunc sagittis felis erat, in viverra dolor tempus vel. Nulla vel risus ac leo ullamcorper pulvinar in vel lacus.
+    //                     </p>
+    //                 </div>
+    //                 <h2>Attorney Sites</h2>
+    //                 <div class="favSites attorneySites">
+    //                     <div class="imgs img1">
+    //                         <a href="#">
+    //                             <h4>PARRIS</h4><br>
+    //                             <div class="hr_Container"><hr></div>
+    //                             <h5>View Site</h5>
+    //                         </a>
+    //                     </div>
+    //                     <div class="imgs img2">
+    //                         <a href="#">
+    //                             <h4>PARRIS</h4><br>
+    //                             <div class="hr_Container"><hr></div>
+    //                             <h5>View Site</h5>
+    //                         </a>
+    //                     </div>
+    //                 </div>
+    //                 <h2>Restaurant Sites</h2>
+    //                 <div class="favSites restSites">
+    //                     <div class="imgs img1">
+    //                         <a href="#">
+    //                             <h4>QUAY</h4><br>
+    //                             <div class="hr_Container"><hr></div>
+    //                             <h5>View Site</h5>
+    //                         </a>
+    //                     </div>
+    //                     <div class="imgs img2">
+    //                         <a href="#">
+    //                             <h4>PARRIS</h4><br>
+    //                             <div class="hr_Container"><hr></div>
+    //                             <h5>View Site</h5>
+    //                         </a>
+    //                     </div>
+    //                 </div>
+    //                 <h2>Other Sites</h2>
+    //                 <div class="favSites otherSites">
+    //                     <div class="imgs img1">
+    //                         <a href="#">
+    //                             <h4>PREPD</h4><br>
+    //                             <div class="hr_Container"><hr></div>
+    //                             <h5>View Site</h5>
+    //                         </a>
+    //                     </div>
+    //                     <div class="imgs img2">
+    //                         <a href="#">
+    //                             <h4>TINO<br>POHLMANN</h4><br>
+    //                             <div class="hr_Container"><hr></div>
+    //                             <h5>View Site</h5>
+    //                         </a>
+    //                     </div>
+    //                 </div>
+
+
+    //                 <hr>
+    //                 <div class="nextPage_Btn anchor5">
+    //                     <hr class="red">
+    //                     <button>NEXT : Contact</button>
+    //                 </div>
+    //             </div>
+    //         </article>  
+    //     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

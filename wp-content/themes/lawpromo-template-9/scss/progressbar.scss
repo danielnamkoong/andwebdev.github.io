@@ -1,0 +1,118 @@
+//  IMPORT
+@import 'main.scss';
+
+/*  PROGRESS BAR  */
+.track {
+    height: 100%;
+    width: 5px;
+    position: fixed;
+    background: #fff;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    #progressBar {
+        width: 100%;
+        height: 0%;
+        background: #f73304;
+        position: absolute;
+        @include transition(0.1s);
+    }
+    ul {
+        width: 5px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+
+        li {
+            height: 20%;
+            border-bottom: 2px solid #000;
+            list-style: none;
+            position: relative;
+            
+            a {
+                width: 100px;
+                height: 100%;
+                align-items: center;
+                display: flex;
+                flex-flow: column;
+                font-size: 12px;
+                justify-content: center;
+                padding: 0;
+                position: absolute;
+                right: 0;
+                
+                h6 {
+                    width: 100px;
+                    position: relative;
+                    left: 100px;
+                    @include transition(0.3s);
+                    
+                    hr {
+                        width: 15px;
+                        height: 3px;
+                        background: #f73304;
+                        border: 0;
+                        margin: 0 0 5px;
+                    }
+                }
+            }
+            :hover h6,
+            :hover h6,
+            :hover h6,
+            :hover h6,
+            :hover h6{
+                left: 0;
+            }
+        }
+        li:last-of-type {
+            border-bottom: none;
+        }
+        .anchor1:hover,
+        .anchor2:hover,
+        .anchor3:hover,
+        .anchor4:hover,
+        .anchor5:hover  {
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+/*  PROGRESS BAR 2  */
+.track2 {
+    height: 100%;
+    width: 5px;
+    position: fixed;
+    background: #f4f4f4;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    
+    .progressBar_rightPage {
+        width: 100%;
+        height: 0%;
+        background: #f73304;
+        position: absolute;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

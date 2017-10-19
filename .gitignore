@@ -1,0 +1,7 @@
+!.gitignore
+.htaccess
+.DS_Store
+tmp/*
+cache/*
+.saas-cache/*
+wp-config.php

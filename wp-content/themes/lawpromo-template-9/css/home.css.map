@@ -1,0 +1,1 @@
+{"version":3,"sources":["home.scss"],"names":[],"mappings":"AAGA,gBACI,SAAS,AACT,SAAU,CACb","file":"home.css","sourcesContent":[".main_Wrapper {\n    \n}\n.main_Container {\n    margin: 0;\n    padding: 0;\n}\n.main_Col {\n    \n}"]}

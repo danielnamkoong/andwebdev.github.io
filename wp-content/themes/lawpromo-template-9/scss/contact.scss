@@ -1,0 +1,174 @@
+//  IMPORT
+@import 'main.scss';
+
+
+
+
+/*  INTRO  */
+.article5 .intro {
+	margin-bottom: 50px; 
+}
+
+
+/*  GOOGLE MAP  */
+.map_Container {
+	width: 100%;
+	float: left; 
+	margin-bottom: 100px; 
+}
+
+
+/*  CONTACT FORM  */
+.contactForm_Container {
+	width: 100%;
+    float: left;
+    margin-bottom: 50px; 
+}
+.contactForm_Container .contactForm {
+	width: 100%;
+    float: left;
+}
+.contactForm_Container .contactForm hr {
+	@extend .red_HR;
+	margin: 0 0 25px;
+}
+.contactForm_Container .contactForm h2 {
+	width: 100%;
+    float: left;
+	font-family: $Trirong;
+	margin-bottom: 25px;
+}
+
+.yourName,
+.email,
+.phoneNumber {
+	width: 100%;
+	float: left;
+    margin-bottom: 10px;
+	
+	input {
+		width: 100%;
+		height: 45px;
+		border: 0;
+	    border-bottom: 1px solid #333;
+	    letter-spacing: 2px;
+	    -webkit-font-smoothing: antialiased;
+	}
+}
+.message {
+	width: 100%;
+	float: left;
+    margin-bottom: 25px;
+    
+	textarea {
+		width: 100%;
+		height: 150px; 
+		border: 0;
+	    border-bottom: 1px solid #333;
+		float: left;
+	    letter-spacing: 2px;
+	    padding-top: 10px;
+	    -webkit-font-smoothing: antialiased;
+	}
+}
+.submitBtn {
+    width: 100%;
+    float: left;
+    
+	.wpcf7-form-control-wrap {
+	    margin-bottom: 25px;
+	}    
+	p {
+
+		input{
+			background: #fff;
+			border: 1px solid #333;
+		    font-weight: 600;
+			letter-spacing: 2px;
+			padding: 15px 50px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+/*  INPUT : PLACEHOLDER  */
+::-webkit-input-placeholder {
+    color: silver !important;
+    letter-spacing: 1px;
+    opacity: 1;
+    -webkit-transition: 0.7s;
+       -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+         -o-transition: 0.7s;
+            transition: 0.7s;
+}
+::-moz-placeholder {
+    color: silver !important;
+    letter-spacing: 1px;
+    opacity: 1;
+    -webkit-transition: 0.7s;
+       -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+         -o-transition: 0.7s;
+            transition: 0.7s;
+}
+:-ms-input-placeholder {
+    color: silver !important;
+    letter-spacing: 1px;
+    opacity: 1;
+    -webkit-transition: 0.7s;
+       -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+         -o-transition: 0.7s;
+            transition: 0.7s;
+}
+:-moz-placeholder {
+    color: silver !important;
+    letter-spacing: 1px;
+    opacity: 1;
+    -webkit-transition: 0.7s;
+       -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+         -o-transition: 0.7s;
+            transition: 0.7s;
+}
+
+
+/*  TEXTAREA : PLACEHOLDER  */
+::-webkit-textarea-placeholder {
+    color: silver;
+    letter-spacing: 1px;
+}
+:-ms-textarea-placeholder {
+	color: silver;
+	letter-spacing: 1px;
+}
+
+
+/*  text  */
+.wpcf7-text:focus::-webkit-input-placeholder {
+    opacity: 0;
+    padding-left: 75px;
+}
+/*  textarea  */
+.wpcf7-textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+    padding-left: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

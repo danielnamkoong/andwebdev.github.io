@@ -1,0 +1,2 @@
+[11-Mar-2016 18:20:45 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 39040 bytes) in /home/webpromo/public_html/temp049/wp-content/plugins/wordfence/lib/wfBrowscapCache.php on line 965
+[11-Mar-2016 18:43:22 UTC] PHP Fatal error:  Out of memory (allocated 28311552) (tried to allocate 49152 bytes) in /home/webpromo/public_html/temp049/wp-content/themes/ultimatum/wonderfoundry/addons/plugins/widget-extender/widget-extender.php on line 67

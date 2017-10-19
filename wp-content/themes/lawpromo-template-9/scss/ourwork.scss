@@ -1,0 +1,115 @@
+//  IMPORT
+@import 'main.scss';
+
+/*  INTRO  */
+.article3 .intro {
+	margin-bottom: 50px; 
+}
+
+
+
+
+//	OUR WORK
+/*  PROJECTS  */
+.rightContainer .article3 .content3 .project {
+    width: 100%;
+    border-bottom: 1px solid silver;
+    float: left;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+
+	.img1 { background: url(../../../uploads/2017/09/ourwork/img1.png) no-repeat; }
+	.img2 { background: url(../../../uploads/2017/09/ourwork/img2.png) no-repeat; }
+	.img3 { background: url(../../../uploads/2017/09/ourwork/img3.png) no-repeat; }
+	.img4 { background: url(../../../uploads/2017/09/ourwork/img4.png) no-repeat; }
+	.img1, .img2, .img3, .img4 {
+	    width: 100%;
+	    height: 240px;
+	    @include background-size(cover);
+	    background-position: center;
+	    float: left;
+	    margin-bottom: 15px;
+	    
+	    a {
+	    	width: 100%;
+	    	height: 100%;
+	    	float: left; 
+	    	opacity: 0;
+	    	@include transition(0.3s);
+
+	    	h5 {
+			    height: 100%;
+			    align-items: center;
+			    display: flex;
+			    flex-flow: column;
+			    justify-content: center;
+			    letter-spacing: 2px;
+			    padding: 0;
+	    	}
+	    }
+	    a:hover {
+	    	opacity: 0.9;
+	    }
+	}
+	h6 {
+
+		span {
+
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Rectangle Out */
+.hvr-rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-rectangle-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+  color: white;
+}
+.hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
